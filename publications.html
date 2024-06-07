@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
   </head>
 
   <body>
@@ -51,6 +50,23 @@
           <a class="btn btn-primary btn-sm" href="https://jcorsetti.github.io/oryon/"><i class="fa fa-globe"></i>&nbsp;&nbsp;<strong>webpage</strong></a>
           <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2312.00690"><i class="ai ai-arxiv ai-1x"></i>&nbsp;&nbsp;<strong>arxiv</strong></a>
           <a class="btn btn-primary btn-sm" href="https://github.com/jcorsetti/oryon"><i class="fa fa-github"></i>&nbsp;&nbsp;<strong>code</strong></a>
+
+          <a class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;<strong>reference</strong>
+          </a>
+          <div class="dropdown-menu p-4 text-body-secondary">
+            <pre style="margin-top:-5px; margin-bottom:-10px"><code>
+              @inproceedings{corsetti2024oryon,
+                title = {Open-vocabulary object 6D pose estimation},
+                author = {Corsetti, Jaime and Boscaini, Davide and Oh, Changjae and Cavallaro, Andrea and Poiesi, Fabio},
+                journal = {IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)},
+                year = {2024}
+              }
+            </code></pre>
+          </div>
+
+          <!-- style="max-width: 200px;"> -->
+
           <!-- <a class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>reference</strong></a>
             <ul class="dropdown-menu">
               <p class="text-left">
@@ -65,17 +81,36 @@
               </p>
             </ul> -->
 
+          <!-- <a class="btn btn-primary btn-sm" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content='
+            @inproceedings{corsetti2024oryon,
+              title = {Open-vocabulary object 6D pose estimation},
+              author = {Corsetti, Jaime and Boscaini, Davide and Oh, Changjae and Cavallaro, Andrea and Poiesi, Fabio},
+              journal = {IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)},
+              year = {2024}
+            }'>
+            <i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;<strong>reference</strong>
+          </a> -->
 
+              <!-- <a class="btn btn-primary btn-sm accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">
+                  <i class="fa fa-book"></i>&nbsp;&nbsp;<strong>reference</strong>
+                </button>
+              </a>
 
+              <div id="collapse" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <pre><code>
+                    @inproceedings{corsetti2024oryon,
+                      title = {Open-vocabulary object 6D pose estimation},
+                      author = {Corsetti, Jaime and Boscaini, Davide and Oh, Changjae and Cavallaro, Andrea and Poiesi, Fabio},
+                      journal = {IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)},
+                      year = {2024}
+                    }
+                  </code></pre>
+                </div>
+              </div>
+            </a> -->
 
-          <!-- <div class="dropdown">
-            
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div> -->
 
           <p></p>
         </li>
@@ -509,6 +544,10 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <!-- <script src="main.js"></script> -->
+    <script>
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+      const popover = new bootstrap.Popover('.example-popover', {container: 'body'})
+    </script>
   </body>
 </html>
