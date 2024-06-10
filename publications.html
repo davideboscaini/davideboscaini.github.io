@@ -48,11 +48,41 @@
           <p class="mb-1"><font color="#899499">TL;DR: We introduce the new setting of open-vocabulary object 6D pose estimation,
             in which a textual prompt is used to specify the object of interest instead of requiring its 3D model or video footage capturing multiple viewpoints around the object.</font></p>
 
-          <a class="btn btn-primary btn-sm" href="https://jcorsetti.github.io/oryon/"><i class="fa fa-globe"></i>&nbsp;&nbsp;<strong>webpage</strong></a>
-          <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2312.00690"><i class="ai ai-arxiv ai-1x"></i>&nbsp;&nbsp;<strong>arxiv</strong></a>
-          <a class="btn btn-primary btn-sm" href="https://github.com/jcorsetti/oryon"><i class="fa fa-github"></i>&nbsp;&nbsp;<strong>code</strong></a>
+          <a class="btn btn-primary btn-sm" style="margin-top:3px" href="https://jcorsetti.github.io/oryon/"><i class="fa fa-globe"></i>&nbsp;&nbsp;<strong>webpage</strong></a>
+          <a class="btn btn-primary btn-sm" style="margin-top:3px" href="https://arxiv.org/abs/2312.00690"><i class="ai ai-arxiv ai-1x"></i>&nbsp;&nbsp;<strong>arxiv</strong></a>
+          <a class="btn btn-primary btn-sm" style="margin-top:3px" href="https://github.com/jcorsetti/oryon"><i class="fa fa-github"></i>&nbsp;&nbsp;<strong>code</strong></a>
 
-          <a class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <!-- 
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+          </button>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Reference</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <pre style="margin-top:-5px; margin-bottom:-10px"><code>
+                    @inproceedings{corsetti2024oryon,
+                      title = {Open-vocabulary object 6D pose estimation},
+                      author = {Corsetti, Jaime and Boscaini, Davide and Oh, Changjae and Cavallaro, Andrea and Poiesi, Fabio},
+                      journal = {Computer Vision and Pattern Recognition (CVPR)},
+                      year = {2024}
+                    }
+                  </code></pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <a class="btn btn-primary btn-sm dropdown-toggle" style="margin-top:3px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;<strong>reference</strong>
           </a>
           <div class="dropdown-menu p-4 text-body-secondary">
@@ -64,9 +94,7 @@
                 year = {2024}
               }
             </code></pre>
-          </div>
-
-          <!-- style="max-width: 200px;"> -->
+          </div> -->
 
           <!-- <a class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>reference</strong></a>
             <ul class="dropdown-menu">
@@ -127,10 +155,14 @@
           <p class="mb-1">Mohamed L. Mekhalfi, <strong>Davide Boscaini</strong>, Fabio Poiesi</p>
           <p class="mb-1"><i>British Machine Vision Conference (BMVC)</i>, 2023</p>
 
-          <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2308.15353"><i class="ai ai-arxiv ai-1x"></i>&nbsp;&nbsp;<strong>arxiv</strong></a>
-          <a class="btn btn-primary btn-sm" href="https://github.com/mohamedtev/daca"><i class="fa fa-github"></i>&nbsp;&nbsp;<strong>code</strong></a>
+          <a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2308.15353">
+            <i class="ai ai-arxiv ai-1x"></i>&nbsp;&nbsp;<strong>arxiv</strong>
+          </a>
+          <a class="btn btn-primary btn-sm" href="https://github.com/mohamedtev/daca">
+            <i class="fa fa-github"></i>&nbsp;&nbsp;<strong>code</strong>
+          </a>
 
-          <a class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <!-- <a class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;<strong>reference</strong>
           </a>
           <div class="dropdown-menu p-4 text-body-secondary">
@@ -142,7 +174,7 @@
                 year = {2023}
               }
             </code></pre>
-          </div>
+          </div> -->
 
           <p></p>
         </li>
@@ -561,9 +593,13 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <!-- <script>
-      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-      const popover = new bootstrap.Popover('.example-popover', {container: 'body'})
+      // const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+      // const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+      // const myModal = document.getElementById('myModal')
+      // const myInput = document.getElementById('myInput')
+      // myModal.addEventListener('shown.bs.modal', () => {
+      //   myInput.focus()
+      // })
     </script> -->
   </body>
 </html>
