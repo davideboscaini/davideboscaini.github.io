@@ -2,3 +2,12 @@
     background-color: whitesmoke;
     border-color: whitesmoke;
 }
+
+/* a:link, a:visited{
+    color: black;
+} */
+
+a:hover{
+    color: #0d6efd;
+    text-decoration: none !important;
+}
